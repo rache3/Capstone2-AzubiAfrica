@@ -1,0 +1,20 @@
+{
+  "Rules": [
+    {
+      "ID": "AbortIncompleteMultipart",
+      "Status": "Enabled",
+      "Filter": { "Prefix": "" },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 7
+      }
+    },
+    {
+      "ID": "ExpireOldResponses",
+      "Status": "Enabled",
+      "Filter": { "Prefix": "" },
+      "Expiration": { "Days": 60 },
+      "NoncurrentVersionExpiration": { "NoncurrentDays": 60 }
+    }
+  ]
+}
+
